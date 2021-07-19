@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Etch-a-Sketch</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body> 
+        <div class="header">
+            Welcome to my Sketch
+        </div>
+        <div class="customize">
+            Pick size, color, eraser...
+            <button id='small' class='size' onclick='sizepicker(this.id)'>Small</button>
+            <button id='medium' class='size' onclick='sizepicker(this.id)'>Medium</button>
+            <button id='large' class='size' onclick='sizepicker(this.id)'>Large</button>
+            <button id='blue' data-color='blue' class='color'>Blue Scale</button>
+            <button id='pastel' data-color='pastel' class='color'>Pastel</button>
+            <button id='random' data-color='random' class='color'>Random Color</button>
+            <button id='eraser' data-color='eraser' class='color'>Eraser</button>
+            <button id='colorpicker'><input type="color" value="#ff0000" id="input-color"></button>
+        </div>
+
+        <div class="sketch" id="sketch">
+
+        </div>
+        <div class="footer">
+            Made by QuocPC
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
